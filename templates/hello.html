@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+    <h2>{{ quote_of_the_now }}, how are you feeling right now?</h2>
+    <form class="custom0 custom1" action="/data" method = "POST">
+        <p>Answer 1 <input type = "text" name = "Answer1_name" /></p>
+        <p>Answer 2 <input type = "text" name = "Answer2_name" /></p>
+        <p>Answer 3 <input type = "text" name = "Answer3_name" /></p>
+        <p><input type = "submit" value = "submit" /></p>
+    </form>
+</body>
+</html>
